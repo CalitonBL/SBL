@@ -35,11 +35,16 @@ SBL 保留了 PCL 的界面、安装器和启动逻辑，只把下载能力恢�
 
 ## 真实界面
 
-| 启动页 | 下载页 |
-| :---: | :---: |
-| ![SBL 主页](docs/screenshots/home.png) | ![SBL 下载页](docs/screenshots/download.png) |
+![SBL 下载页：正式版、预览版、远古版与愚人节版](docs/screenshots/download.png)
 
-![Minecraft 1.20.1 运行中](docs/screenshots/running.png)
+![Minecraft 1.20.1 / SBL 运行中](docs/screenshots/running.png)
+
+<details>
+<summary>启动页截图</summary>
+
+![SBL 启动页](docs/screenshots/home.png)
+
+</details>
 
 ## 能做什么
 
