@@ -110,7 +110,9 @@ dotnet publish "Plain Craft Launcher 2/Plain Craft Launcher 2.vbproj" `
 
 ## 已知限制
 
-- 微软登录需要自己注册一次 Azure 应用（免费）；不填只能离线登录。
+- 微软登录需要 Azure Client ID，并通过 Microsoft 的 **Minecraft App Registration 审核**
+  （<https://aka.ms/mce-reviewappid>）；未通过时 `login_with_xbox` 会返回 403 `Invalid app registration`。
+  不填/未过审时只能离线登录，或使用内置的 **LittleSkin** 第三方验证。
 - CurseForge 需要审核通过的 Organization key；不填时仅 Modrinth 与官方源可用。
 - 联机大厅已移除，不包含 Natayark 相关服务。
 - 单文件约 168 MB；游戏目录路径含中文时首次会提示“非 ASCII 路径”，选继续/不再提示即可。
