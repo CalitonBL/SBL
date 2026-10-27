@@ -32,6 +32,13 @@ SBL 使用微软 **设备代码流（device code flow）**。`MS_CLIENT_ID` 是*
 不是账号密码，也不是每个用户各注册一个：注册一次后可以随包分发，所有朋友共用，
 每个人在微软官方页面登录**自己的账号**。
 
+> **重要：Azure 应用只是第一道门。**
+> 新建的 Azure 应用还必须通过 Microsoft 的 **Minecraft Services App Registration 审核**
+> （<https://aka.ms/mce-reviewappid>），否则 `login_with_xbox` 会返回
+> **403 `Invalid app registration`**。
+> 个人开发者目前**不保证通过**（已有案例被要求公司 / D-U-N-S 资质）。
+> 在审核通过前，正版登录无法完成；可以先用 SBL 内置的 **LittleSkin** 第三方验证，或离线账号。
+
 ### 注册 Azure 应用
 
 1. 打开 <https://portal.azure.com> → **Microsoft Entra ID** → **应用注册** → **新注册**。
